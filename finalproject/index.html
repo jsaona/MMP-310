@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie quiz</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+
+<body>
+    <div id="container">
+        <h2 style="text-align: center">Movie Quiz by Jonathan Saona</h2>
+
+        <p>Answer each question correctly and you will get the title and the summary of the movie.</p>
+        
+        <!-- QUESTIONS -->
+        <div id="wrong"></div>
+        <div id="question-container">
+            <h2>1) Who is this character?</h2>
+            <img src="images/green.jpg" width="250px" height="200px">
+            <input id="character" placeholder="Search movies">
+            <input id="button" type="button" value="Submit" onclick="check('character');">
+            <h1 id="character-movie"></h1>
+            <p id="character-overview"></p>
+        </div>
+
+        <div id="wrong"></div>
+        <div>
+            <h2>2) What movie is this ring from?</h2>
+            <img src="images/ring.jpg" width="250px" height="200px">
+            <input id="ring" placeholder="Search movies">
+            <input id="button" type="button" value="Submit" onclick="check('ring');">
+            <h1 id="ring-movie"></h1>
+            <p id="ring-overview"></p>   
+
+        </div>
+        
+        <div id="wrong"></div>
+        <div>
+            <h2>3) What movie are these characters from?</h2>
+            <img src="images/avengers.jpg" width="300px" height="200px">
+            <input id="avengers" placeholder="Search movies">
+            <input id="button" type="button" value="Submit" onclick="check('avengers');">
+            <h1 id="avengers-movie"></h1>
+            <p id="avengers-overview"></p>
+        </div>
+        
+        <div id="wrong"></div>
+        <div>
+            <h2>4) What movie have you seen this character?</h2>
+            <img src="images/shuri.jpg" width="300px" height="200px">
+            <input id="woman" placeholder="Search movies">
+            <input id="button" type="button" value="Submit" onclick="check('woman');">
+            <h1 id="woman-movie"></h1>
+            <p id="woman-overview"></p>
+        </div>
+        
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="app.js"></script>
+    </div>
+</body>
+</html>
